@@ -1,0 +1,39 @@
+
+<style>
+    table,tr,th {border: 1px solid black;}
+    table{height: 250px; width: 450px; text-align: center;}
+</style>
+
+
+
+<table>
+    <tr class="table table-outline">
+        <th>Category Id</th>
+        <th>Category Name</th>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Color</th>
+        <th>Price</th>
+        <th>Update</th>
+        <th>Delete</th>
+        
+    </tr>
+    <tr *ngFor=" let pr of prdtList1">
+        <th>{{pr.cat_id}}</th>
+        <th>{{pr.cat_name | titlecase}}</th>
+        <th>{{pr.pr_id}}</th>
+        <th>{{pr.pr_name | titlecase}}</th>
+        <th>{{pr.color | titlecase}}</th>
+        <th>{{pr.price}}</th>
+        <th><button class="btn btn-warning btn-sm" (click)="onedit(pr._id)">Edit</button></th>
+        <th><button class="btn btn-danger btn-sm" (click)="delId1(pr._id)">Delete</button></th>
+       
+        
+        
+    </tr>
+</table>
+<!-- <h3>{{delflag}}</h3> -->
+
+
+
+

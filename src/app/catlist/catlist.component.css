@@ -1,0 +1,14 @@
+.m{
+    background-color: burlywood;
+    height: 200px;
+    width:300px;
+}
+
+.out{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner{
+    text-align: center;
+}
